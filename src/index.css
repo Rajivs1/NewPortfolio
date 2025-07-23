@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #ffb400;
+  --secondary-color: #2b2b2b;
+  --dark-color: #1e1e1e;
+  --light-color: #ffffff;
+  --text-color: #a6a6a6;
+  --bg-color: #111111;
+  --card-bg: #2b2b2b;
+  --border-color: #383838;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--light-color);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e0a000;
+  transform: translateY(-2px);
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  color: var(--light-color);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 70px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.section-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: var(--light-color);
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+  
