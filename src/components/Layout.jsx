@@ -65,8 +65,8 @@ const Layout = () => {
         return 'Resume';
       case '/portfolio':
         return 'Portfolio';
-      case '/blog':
-        return 'Blog';
+      case '/skills':
+        return 'My Skills';
       case '/contact':
         return 'Contact';
       default:

@@ -6,13 +6,11 @@ import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
 import Skills from './pages/Blog';
 import Contact from './pages/Contact';
-import AnimatedCursor from './components/AnimatedCursor';
 
 function App() {
   return (
     <ThemeProvider>
     <Router>
-      <AnimatedCursor />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<About />} />
