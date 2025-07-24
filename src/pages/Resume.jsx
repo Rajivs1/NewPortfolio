@@ -16,7 +16,7 @@ const Resume = () => {
               <span className="bg-primary/10 text-primary px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium whitespace-nowrap">2021 — 2025</span>
             </div>
             <p className="text-light-text dark:text-dark-text text-sm md:text-base leading-relaxed">
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
+              Pursuing a comprehensive Computer Science curriculum with specialization in software development and artificial intelligence. Engaged in various technical projects including mobile application development, machine learning models, and web development. Active member of the university coding club and participated in multiple hackathons.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ const Resume = () => {
               <span className="bg-primary/10 text-primary px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium whitespace-nowrap">2018 — 2020</span>
             </div>
             <p className="text-light-text dark:text-dark-text text-sm md:text-base leading-relaxed">
-              Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis.
+              Completed senior secondary education with a focus on Physics, Chemistry, and Mathematics. Achieved distinction in Mathematics and Computer Science. Participated in inter-school technology competitions and science exhibitions. Served as the head of the school's computer club, organizing workshops and events.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ const Resume = () => {
               <span className="bg-primary/10 text-primary px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium whitespace-nowrap">2016 — 2018</span>
             </div>
             <p className="text-light-text dark:text-dark-text text-sm md:text-base leading-relaxed">
-              Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos.
+              Completed high school education with a strong foundation in science and mathematics. Discovered my passion for programming during this period, participating in basic coding courses and computer science projects. Recognized with the "Young Innovator Award" for developing a simple calculator application using JavaScript.
             </p>
           </div>
         </div>

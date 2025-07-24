@@ -63,10 +63,10 @@ const Layout = () => {
         return 'About Me';
       case '/resume':
         return 'Resume';
-      case '/portfolio':
-        return 'Portfolio';
+      case '/projects':
+        return 'Projects';
       case '/skills':
-        return 'My Skills';
+        return 'Skills';
       case '/contact':
         return 'Contact';
       default:

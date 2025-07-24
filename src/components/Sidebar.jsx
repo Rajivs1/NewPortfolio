@@ -4,15 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faEnvelope, 
   faPhone, 
-  faBirthdayCake, 
   faMapMarkerAlt,
   faChevronDown,
-  faChevronUp
+  faChevronUp,
+  faFileAlt
 } from '@fortawesome/free-solid-svg-icons';
 import { 
-  faFacebookF, 
-  faTwitter, 
-  faInstagram 
+  faLinkedinIn,
+  faGithub,
+  faXTwitter
 } from '@fortawesome/free-brands-svg-icons';
 import { gsap } from 'gsap';
 
@@ -155,15 +155,6 @@ const Sidebar = ({ isOpen }) => {
             </li>
             <li ref={addToContactRefs} className="flex items-start text-light-text dark:text-dark-text transition-colors duration-300">
               <div className="w-8 h-8 flex items-center justify-center text-primary mr-3 text-sm flex-shrink-0">
-                <FontAwesomeIcon icon={faBirthdayCake} />
-              </div>
-              <div className="flex flex-col min-w-0">
-                <span className="block text-xs text-light-text dark:text-dark-text mb-1 transition-colors duration-300">BIRTHDAY</span>
-                <span className="text-dark dark:text-light font-normal transition-colors duration-300 text-sm">Nov 05, 2002</span>
-              </div>
-            </li>
-            <li ref={addToContactRefs} className="flex items-start text-light-text dark:text-dark-text transition-colors duration-300">
-              <div className="w-8 h-8 flex items-center justify-center text-primary mr-3 text-sm flex-shrink-0">
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
               </div>
               <div className="flex flex-col min-w-0">
@@ -173,16 +164,19 @@ const Sidebar = ({ isOpen }) => {
             </li>
           </ul>
           
-          {/* Social Media Links */}
+          {/* Social Media Links - Mobile */}
           <div className="flex justify-center gap-4">
-            <a ref={addToSocialRefs} href="#" aria-label="Facebook" className="w-8 h-8 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-sm transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
-              <FontAwesomeIcon icon={faFacebookF} />
+            <a ref={addToSocialRefs} href="https://www.linkedin.com/in/rajiv-ranjan1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-8 h-8 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-sm transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
+              <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
-            <a ref={addToSocialRefs} href="#" aria-label="Twitter" className="w-8 h-8 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-sm transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
-              <FontAwesomeIcon icon={faTwitter} />
+            <a ref={addToSocialRefs} href="https://github.com/Rajivs1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-8 h-8 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-sm transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
+              <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a ref={addToSocialRefs} href="#" aria-label="Instagram" className="w-8 h-8 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-sm transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
-              <FontAwesomeIcon icon={faInstagram} />
+            <a ref={addToSocialRefs} href="https://x.com/RajivRa24145798" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="w-8 h-8 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-sm transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
+              <FontAwesomeIcon icon={faXTwitter} />
+            </a>
+            <a ref={addToSocialRefs} href="/src/assets/RajivResume001.pdf" download="Rajiv_Ranjan_Resume.pdf" aria-label="Resume" className="w-8 h-8 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-sm transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
+              <FontAwesomeIcon icon={faFileAlt} />
             </a>
           </div>
         </div>
@@ -228,15 +222,6 @@ const Sidebar = ({ isOpen }) => {
           </li>
           <li ref={addToContactRefs} className="flex items-start text-light-text dark:text-dark-text transition-colors duration-300">
             <div className="w-10 h-10 flex items-center justify-center text-primary mr-2.5 text-lg flex-shrink-0">
-              <FontAwesomeIcon icon={faBirthdayCake} />
-            </div>
-            <div className="flex flex-col min-w-0">
-              <span className="block text-xs text-light-text dark:text-dark-text mb-1 transition-colors duration-300">BIRTHDAY</span>
-              <span className="text-dark dark:text-light font-normal transition-colors duration-300">Nov 05, 2002</span>
-            </div>
-          </li>
-          <li ref={addToContactRefs} className="flex items-start text-light-text dark:text-dark-text transition-colors duration-300">
-            <div className="w-10 h-10 flex items-center justify-center text-primary mr-2.5 text-lg flex-shrink-0">
               <FontAwesomeIcon icon={faMapMarkerAlt} />
             </div>
             <div className="flex flex-col min-w-0">
@@ -246,16 +231,20 @@ const Sidebar = ({ isOpen }) => {
           </li>
         </ul>
         
+        {/* Social Media Links - Desktop */}
         <div className="flex justify-center mt-8 gap-4">
-          <a ref={addToSocialRefs} href="#" aria-label="Facebook" className="w-10 h-10 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-lg transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
-            <FontAwesomeIcon icon={faFacebookF} />
+          <a ref={addToSocialRefs} href="https://www.linkedin.com/in/rajiv-ranjan1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-lg transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
+            <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
-          <a ref={addToSocialRefs} href="#" aria-label="Twitter" className="w-10 h-10 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-lg transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
-            <FontAwesomeIcon icon={faTwitter} />
+          <a ref={addToSocialRefs} href="https://github.com/Rajivs1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-10 h-10 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-lg transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
+            <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a ref={addToSocialRefs} href="#" aria-label="Instagram" className="w-10 h-10 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-lg transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
-            <FontAwesomeIcon icon={faInstagram} />
+          <a ref={addToSocialRefs} href="https://x.com/RajivRa24145798" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="w-10 h-10 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-lg transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
+            <FontAwesomeIcon icon={faXTwitter} />
           </a>
+          <a ref={addToSocialRefs} href="/src/assets/RajivResume001.pdf" download="Rajiv_Ranjan_Resume.pdf" aria-label="Resume" className="w-10 h-10 flex items-center justify-center rounded-full bg-transparent text-dark dark:text-light text-lg transition-all duration-300 ease-in-out hover:bg-primary hover:text-dark">
+              <FontAwesomeIcon icon={faFileAlt} />
+            </a>
         </div>
       </div>
     </aside>

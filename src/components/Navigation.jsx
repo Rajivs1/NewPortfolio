@@ -13,7 +13,7 @@ const Navigation = () => {
   const navItems = [
     { to: '/', text: 'About', icon: faUser },
     { to: '/resume', text: 'Resume', icon: faFileText },
-    { to: '/portfolio', text: 'Portfolio', icon: faFolderOpen },
+    { to: '/projects', text: 'Projects', icon: faFolderOpen },
     { to: '/skills', text: 'Skills', icon: faCode },
     { to: '/contact', text: 'Contact', icon: faEnvelope }
   ];
